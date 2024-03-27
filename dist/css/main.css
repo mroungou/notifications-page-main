@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+main {
+  padding: 1rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.header .logo {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: hsl(224, 21%, 14%);
+  margin: auto 0;
+}
+.header .logo .count {
+  padding: 0.25rem 1rem;
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 30%;
+}
+.header .button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: auto 0 auto auto;
+  color: hsl(219, 12%, 42%);
+}
+
+.notifications {
+  display: grid;
+  row-gap: 1rem;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  line-height: 120%;
+  padding: 2rem 0;
+}
+.notifications img {
+  width: 39px;
+  height: 39px;
+}
+.notifications .notification {
+  display: grid;
+  grid-template-columns: 39px auto;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  padding: 1rem;
+}
+.notifications .name {
+  font-weight: 800;
+  color: hsl(224, 21%, 14%);
+  padding-right: 0.25rem;
+}
+.notifications .about {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+  padding-left: 0.25rem;
+}
+.notifications .time {
+  display: block;
+  font-weight: 500;
+  color: hsl(219, 14%, 63%);
+  padding-top: 0.25rem;
+}
+.notifications .message {
+  border: 3px solid hsl(210, 60%, 98%);
+  color: hsl(219, 12%, 42%);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.unread {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.dot {
+  background-color: hsl(1, 90%, 64%);
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.25rem;
+}/*# sourceMappingURL=main.css.map */
