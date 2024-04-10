@@ -53,7 +53,7 @@ main {
 
     .notification {
         display: grid;
-        grid-template-columns: 39px auto;
+        grid-template-columns: 39px auto auto;
         column-gap: 1rem;
         padding: 1rem;
     }
@@ -90,6 +90,12 @@ main {
     background-color: colors.$veryLightGrayishBlue;
 }
 
+.read {
+    .dot {
+        display: none;
+    }
+}
+
 .dot {
     background-color: colors.$red;
     height: 8px;
@@ -97,4 +103,59 @@ main {
     border-radius: 50%;
     display: inline-block;
     margin-left: .25rem;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background: colors.$veryLightGrayishBlue;
+        padding: 2rem 23rem;
+    }
+
+    main {
+        padding: 2rem;
+        border-radius: 10px;
+    }
+
+    .header {
+
+        .logo {
+            font-size: 1.5rem;
+        }
+
+        .count {
+            margin-left: .25rem;
+            font-size: 1rem;
+        }
+
+        .button {
+            font-size: 1rem;
+            &:hover {
+                cursor: pointer;
+                color: colors.$blue;
+            }
+        }
+    }
+
+    .notifications {
+        font-size: 1rem;
+
+        .notification {
+            grid-template-columns: 45px auto auto !important;
+
+            img.kim {
+                margin-left: auto;
+            }
+        }
+
+        .name:hover, 
+        .about:hover {
+            cursor: pointer;
+            color: colors.$blue;
+        }
+
+        .message:hover {
+            cursor: pointer;
+            background-color: colors.$lightgrayishBlue2;
+        }
+    }
 }

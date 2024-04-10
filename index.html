@@ -17,7 +17,7 @@
     <main>
       <div class="header">
         <div class="logo">Notifications <span class="count" id="count">3</span></div>
-        <div class="button"> Mark all as read</div></div>
+        <div class="button" id="mark-button"> Mark all as read</div></div>
       <div class="notifications">
         <div class="notification unread">
           <img src="./assets/images/avatar-mark-webber.webp" alt="">
@@ -46,10 +46,12 @@
             <span class="time">1 day ago</span>
           </div>
         </div>
-        <div class="notification">
+        <div class="notification read">
           <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
           <div class="details">
-            <span class="name">Rizky Hasanuddin</span> sent you a private message <span class="time">5 days ago</span>
+            <span class="name">Rizky Hasanuddin</span> sent you a private message 
+            <span class="dot"></span>
+            <span class="time">5 days ago</span>
             <div class="message">
               Hello, thanks
               for setting up the Chess Club. I've been a member for a few weeks now
@@ -57,25 +59,31 @@
             </div>
           </div>
         </div>
-        <div class="notification">
+        <div class="notification read">
           <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
           <div class="details">
-            <span class="name">Kimberly Smith</span> commented on your picture <span class="time">1 week ago</span>
+            <span class="name">Kimberly Smith</span> commented on your picture
+            <span class="dot"></span> 
+            <span class="time">1 week ago</span>
           </div>
+          <img class= "kim" src="./assets/images/avatar-anna-kim.webp" alt="">
         </div>
-        <div class="notification">
+        <div class="notification read">
           <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
           <div class="details">
             <span class="name">Nathan Peterson</span> reacted to your recent post <span class="about">
               5 end-game strategies to
               increase your win rate
+              <span class="dot"></span>
             </span> <span class="time">2 weeks ago</span>
           </div>
         </div> 
-        <div class="notification">
+        <div class="notification read">
           <img src="./assets/images/avatar-anna-kim.webp" alt="">
           <div class="details">
-            <span class="name">Anna Kim</span> left the group <span class="about">Chess Club</span> <span class="time">
+            <span class="name">Anna Kim</span> left the group <span class="about">Chess Club</span> 
+            <span class="dot"></span>
+            <span class="time">
               2
               weeks ago
             </span>
