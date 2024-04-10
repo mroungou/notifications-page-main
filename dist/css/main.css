@@ -5,7 +5,7 @@ body {
 }
 
 main {
-  padding: 1rem;
+  padding: 0.75rem;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -46,10 +46,16 @@ main {
 }
 .notifications .notification {
   display: grid;
-  grid-template-columns: 39px auto auto;
+  grid-template-columns: 39px auto;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   padding: 1rem;
+}
+.notifications .smith {
+  grid-template-columns: 39px auto auto;
+}
+.notifications .smith .kim {
+  margin: auto 0;
 }
 .notifications .name {
   font-weight: 800;
@@ -98,7 +104,7 @@ main {
     padding: 2rem 23rem;
   }
   main {
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
   }
   .header .logo {
@@ -118,11 +124,21 @@ main {
   .notifications {
     font-size: 1rem;
   }
+  .notifications img {
+    width: 45px;
+    height: 45px;
+  }
   .notifications .notification {
-    grid-template-columns: 45px auto auto !important;
+    grid-template-columns: 45px auto !important;
   }
   .notifications .notification img.kim {
     margin-left: auto;
+  }
+  .notifications .notification .kim:hover {
+    cursor: pointer;
+  }
+  .notifications .smith {
+    grid-template-columns: 45px auto auto !important;
   }
   .notifications .name:hover,
   .notifications .about:hover {
